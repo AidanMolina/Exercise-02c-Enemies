@@ -16,6 +16,3 @@ __meta__ = {
 }
 
 [node name="Enemies" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
