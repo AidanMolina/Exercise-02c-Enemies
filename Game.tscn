@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=1]
 
 [node name="Game" type="Node2D"]
 __meta__ = {
@@ -16,3 +18,12 @@ __meta__ = {
 }
 
 [node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 5 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 100 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -100, 100 )
